@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
-	"reflect"
 	"strings"
 )
 
@@ -50,19 +49,3 @@ func AnalyzeRequest(text string) *http.Request {
 
 }
 
-
-func traverse(target interface{}) {
-	sVal := reflect.ValueOf(target)
-	sType := reflect.TypeOf(target)
-	if sType.Kind() == reflect.Ptr {
-		//用Elem()获得实际的value
-		sVal = sVal.Elem()
-		sType = sType.Elem()
-	}
-	num := sVal.NumField()
-	for i := 0; i < num; i++ {
-		f := sType.Field(i)
-		val := sVal.Field(i).Interface()
-		fmt.Printf("%5s %v = %v\n", f.Name, f.Type, val)
-	}
-}
